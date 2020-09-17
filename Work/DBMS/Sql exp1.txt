@@ -1,0 +1,14 @@
+create table Student1107(Id int(20) primary key,Name varchar(20), Address varchar(50),Year varchar(10),Branch varchar(20),Age int);
+insert into Student1107 values(101,'Rahul','Delhi',2001,'CSE',19);
+insert into Student1107 values(102,'Ritik','Delhi',2004,'ME',20);
+insert into Student1107 values(103,'Ajay','Gurgram',2005,'CSE',21);
+insert into Student1107 values(104,'Sneha','Noida',2009,'ECE',22);
+insert into Student1107 values(105,'Ankita','Delhi',2010,'ME',23);
+insert into Student1107 values(106,'Rahul','Gurgram',2004,'ECE',24);
+insert into Student1107 values(107,'Tanmay','Noida',2005,'BME',20);
+insert into Student1107 values(108,'Nikhl','Noida',2010,'CSE',21);
+select Name,Year from Student1107;
+select * from Student1107 where Address='Delhi' and Age=20;
+select * from Student1107 where not Address='Delhi';
+select Name,Year from Student1107 where Address="Delhi" or Address="Gurgram";
+select * from Student1107 where Address In ('Delhi','Gurgram');
